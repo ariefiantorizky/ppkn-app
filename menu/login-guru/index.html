@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk</title>
+
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+
+    <style>
+        main {
+            width: 100%;
+            height: 100%;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <h1>
+                Masuk
+            </h1>
+
+            <form autocomplete="off" aria-required="true" method="POST">
+                <div class="input">
+                    <label for="nama-user">Nama Lengkap:</label>
+                    <input type="text" name="nama" id="nama-user" required>
+
+                </div>
+                <div class="input">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+
+                    <span class="err err-pass">Password salah</span>
+                </div>
+                <div class="input">
+                    <label for="kode-unik">Kode Unik:</label>
+                    <input type="number" name="kode" id="kode-unik" required>
+
+                    <span class="err err-code">Kode unik salah</span>
+                </div>
+
+                <div class="input-button">
+                    <button type="submit">Masuk</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container-modal">
+            <div class="notifikasi">
+                <h1>
+                    Apakah anda seorang guru?
+                </h1>
+
+                <div class="modal-button">
+                    <button id="tidak">Tidak</button>
+                    <button id="ya">Ya</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../dist/js/auth-login.js"></script>
+</body>
+
+</html>

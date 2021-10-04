@@ -1,0 +1,22 @@
+{
+    "short_name": "PPKN",
+    "name": "Pendidikan Pancasila dan Kewarganegaraan",
+    "icons": [{
+            "src": "/images/logo-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/logo-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#e65a33",
+    "background_color": "#e65a33",
+    "display": "standalone",
+    "orientation": "portrait",
+    "description": "PPKN is mobile learning application developed by CODEV"
+}

@@ -1024,7 +1024,7 @@ object {
     width: 350px;
     background: #3F3D56;
     color: #fff;
-    padding: 12px;
+    padding: 15px 20px;
     border-radius: 8px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -1054,8 +1054,8 @@ object {
 }
 
 .before-content h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     opacity: 0.4;
 }
 
@@ -1065,12 +1065,15 @@ object {
 
 .flex-menu {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 
 .link {
+    width: 100%;
     background: #fff;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
@@ -1362,4 +1365,9 @@ audio::-webkit-media-controls-enclosure {
     100% {
         transform: rotate(360deg);
     }
+}
+
+a[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: no-drop;
 }

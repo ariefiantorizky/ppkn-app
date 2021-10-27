@@ -26,65 +26,74 @@
 </head>
 
 <body>
-    <main>
-        <div class="main-body">
-            <h1>Anda harus melaporkan permasalahan ini jika:</h1>
-
-            <ul>
-                <li>
-                    Anda melihat ada yang bermasalah dengan aplikasi?
-                </li>
-                <li>
-                    Perlu bantuan terkait penggunaan aplikasi?
-                </li>
-                <li>
-                    Terdapat materi pembahasan yang kurang lengkap dan membosankan?, serta
-                </li>
-                <li>
-                    Ada yang menyalahgunakan aplikasi?
-                </li>
-            </ul>
-
-            <button id="modal-help">
-                Kirim Laporan
-            </button>
-
-            <div class="link-opacity">
-                <a href="../index.html">Kembali</a>
+    <div class="container">
+        <main>
+            <div class="main-heading">
+                <img src="../../images/garuda.png" class="img">
+                <h1>
+                    Melaporkan Masalah
+                </h1>
             </div>
-        </div>
-    </main>
+            <div class="main-body">
+                <h1>Anda harus melaporkan permasalahan ini jika:</h1>
 
-    <div class="container-modal hidden">
-        <div class="notifikasi">
-            <div class="send">
-                <form autocomplete="off" aria-required="true" id="form">
-                    <div class="input">
-                        <label for="email">Alamat Email :</label>
-                        <input type="email" name="Email" id="email" required>
-                    </div>
-                    <div class="input">
-                        <label for="nama">Nama Lengkap :</label>
-                        <input type="text" name="Nama" id="nama" required>
-                    </div>
-                    <div class="input">
-                        <label for="pesan">Pesan :</label>
-                        <!-- <input type="text" name="" id="pesan"> -->
-                        <textarea name="Pesan" id="pesan" required></textarea>
-                    </div>
+                <ul>
+                    <li>
+                        Anda melihat ada yang bermasalah dengan aplikasi?
+                    </li>
+                    <li>
+                        Perlu bantuan terkait penggunaan aplikasi?
+                    </li>
+                    <li>
+                        Terdapat materi pembahasan yang kurang lengkap dan membosankan?, serta
+                    </li>
+                    <li>
+                        Ada yang menyalahgunakan aplikasi?
+                    </li>
+                </ul>
+
+                <button id="modal-help">
+                    Kirim Laporan
+                </button>
+
+                <div class="link-opacity">
+                    <a href="../index.html">Kembali</a>
+                </div>
+            </div>
+        </main>
+
+        <div class="container-modal hidden">
+            <div class="notifikasi">
+                <div class="send">
+                    <form autocomplete="off" aria-required="true" id="form">
+                        <div class="input">
+                            <label for="email">Alamat Email :</label>
+                            <input type="email" name="Email" id="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="nama">Nama Lengkap :</label>
+                            <input type="text" name="Nama" id="nama" required>
+                        </div>
+                        <div class="input">
+                            <label for="pesan">Pesan :</label>
+                            <!-- <input type="text" name="" id="pesan"> -->
+                            <textarea name="Pesan" id="pesan" required></textarea>
+                        </div>
+
+                        <div class="modal-button">
+                            <button type="submit" id="kirim_laporan">Kirim</button>
+                            <button id="batal">Batal</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="done hidden">
+                    <img src="../../images/done.gif" alt="">
+                    <h1>Terima kasih!</h1>
 
                     <div class="modal-button">
-                        <button type="submit" id="kirim_laporan">Kirim</button>
+                        <button type="button" id="close">Keluar</button>
                     </div>
-                </form>
-            </div>
-
-            <div class="done hidden">
-                <img src="../../images/done.gif" alt="">
-                <h1>Terima kasih!</h1>
-
-                <div class="modal-button">
-                    <button type="button" id="close">Keluar</button>
                 </div>
             </div>
         </div>

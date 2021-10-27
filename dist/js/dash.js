@@ -70,5 +70,5 @@ logout.addEventListener("click", function (e) {
 
     localStorage.removeItem("nama");
 
-    window.open("/menu/index.html", "_parent");
+    window.open("../../menu/index.html", "_parent");
 })

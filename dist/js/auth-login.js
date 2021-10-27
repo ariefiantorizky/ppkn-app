@@ -7,7 +7,7 @@ const noBtn = document.getElementById("tidak");
 const modals = document.querySelector(".container-modal");
 
 window.addEventListener("contextmenu", function () {
-    window.open("/menu/index.html", "_self");
+    window.open("../../menu/index.html", "_self");
 })
 
 yesBtn.addEventListener("click", function () {
@@ -15,7 +15,7 @@ yesBtn.addEventListener("click", function () {
 });
 
 noBtn.addEventListener("click", function () {
-    window.open("/menu/index.html", "_self");
+    window.open("../../menu/index.html", "_self");
 });
 
 form.addEventListener("submit", function (e) {

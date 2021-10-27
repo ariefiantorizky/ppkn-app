@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../../dist/css/style.css">
     <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <style>
         header {
@@ -19,14 +20,14 @@
         main {
             width: 100%;
             height: 100%;
-            padding: 1.5rem;
+            padding: 10px;
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
             justify-content: center;
         }
 
-        .container {
+        .container-menu {
             width: 100%;
             height: 100%;
             margin-top: 3rem;
@@ -35,176 +36,192 @@
 </head>
 
 <body>
+    <div class="container">
+        <main>
+            <header>
+                <div class="user">
+                    <img src="../../images/user.png" alt="">
+                </div>
 
-    <main>
-        <header>
-            <div class="user">
-                <img src="../../images/user.png" alt="">
-            </div>
+                <div class="dash-title">
+                    <h4>Selamat Datang</h4>
+                    <h1 id="nama-lengkap"></h1>
+                    <a href="#" id="logout">Keluar</a>
+                </div>
 
-            <div class="dash-title">
-                <h4>Selamat Datang</h4>
-                <h1 id="nama-lengkap"></h1>
-                <a href="#" id="logout">Keluar</a>
-            </div>
+                <a href="" class="back-to-home"><img src="../../images/refresh.png" alt=""></a>
+            </header>
 
-            <a href="" class="back-to-home"><img src="../../images/refresh.png" alt=""></a>
-        </header>
+            <div class="container-menu">
+                <div class="banner-2">
+                    <h2>Dapatkan akses ke semua google form hanya dengan 1 klik</h2>
+                    <p>jaga #privasi semua link</p>
+                </div>
 
-        <div class="container">
-            <div class="banner-2">
-                <h2>dapatkan akses ke semua google form hanya dengan 1 klik</h2>
-                <p>jaga #privasi semua link</p>
-            </div>
+                <div class="select-menu">
+                    <h2>Pilih Menu</h2>
 
-            <div class="select-menu">
-                <h2>Pilih Menu</h2>
+                    <div class="menu-dashboard">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="menu-dash" id="dash-1">
+                                        <img src="../../images/exam.png">
 
-                <div class="menu-dashboard">
-                    <div class="menu-dash" id="dash-1">
-                        <img src="../../images/exam.png">
+                                        <div>
+                                            <span>Soal Latihan</span>
+                                            <h3>Bab 1. Kasus-Kasus Pelanggaran Hak dan Pengingkaran
+                                                Kewajiban Warga Negara</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu-dash" id="dash-2">
+                                        <img src="../../images/exam.png">
 
-                        <div>
-                            <span>Soal Latihan</span>
-                            <h3>Bab 1. Kasus-Kasus Pelanggaran Hak dan Pengingkaran
-                                Kewajiban Warga Negara</h3>
+                                        <div>
+                                            <span>Soal Latihan</span>
+                                            <h3>Bab 2. Perlindungan dan Penegakan Hukum di Indonesia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu-dash" id="dash-3">
+                                        <img src="../../images/exam.png">
+
+                                        <div>
+                                            <span>Soal Latihan</span>
+                                            <h3>Bab 3. Pengaruh Kemajuan Iptek terhadap Negara Kesatuan
+                                                Republik Indonesia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu-dash" id="dash-4">
+                                        <img src="../../images/exam.png">
+
+                                        <div>
+                                            <span>Soal Latihan</span>
+                                            <h3>Bab 4. Dinamika Persatuan dan Kesatuan Bangsa dalam Konteks
+                                                Negara Kesatuan Republik Indonesia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="menu-dash" id="dash-5">
+                                        <img src="../../images/exam.png">
+
+                                        <div>
+                                            <span>Soal Latihan</span>
+                                            <h3>Ulangan Akhir</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-dash" id="dash-2">
-                        <img src="../../images/exam.png">
+                </div>
 
-                        <div>
-                            <span>Soal Latihan</span>
-                            <h3>Bab 2. Perlindungan dan Penegakan Hukum di Indonesia</h3>
+                <div class="content-menu">
+                    <div class="before-content">
+                        <h3>Pilih menu terlebih dahulu!</h3>
+                    </div>
+
+                    <div class="selected hidden" id="menu-1">
+                        <h2>soal latihan bab 1</h2>
+                        <div class="flex-menu">
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/17kE6T4rU2Uro5gOvITyyKNuSmJQUjY1sGZtKEjwzjBw/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>pilihan ganda</p>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/13qFl4sgGD27tSqA_xCMDnJm9x2ERg8cQgpuSeCNjJOo/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>uraian</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-dash" id="dash-3">
-                        <img src="../../images/exam.png">
-
-                        <div>
-                            <span>Soal Latihan</span>
-                            <h3>Bab 3. Pengaruh Kemajuan Iptek terhadap Negara Kesatuan
-                                Republik Indonesia</h3>
+                    <div class="selected hidden" id="menu-2">
+                        <h2>soal latihan bab 2</h2>
+                        <div class="flex-menu">
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1btR2Rgp2Z4AXstqMaZlFHLJe-9H0e2qSJl5zNconoMU/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>pilihan ganda</p>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/15_TZ7lLsK7ZZohpluGENmwa_btcH6h61kUchMP-3AAc/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>uraian</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-dash" id="dash-4">
-                        <img src="../../images/exam.png">
-
-                        <div>
-                            <span>Soal Latihan</span>
-                            <h3>Bab 4. Dinamika Persatuan dan Kesatuan Bangsa dalam Konteks
-                                Negara Kesatuan Republik Indonesia</h3>
+                    <div class="selected hidden" id="menu-3">
+                        <h2>soal latihan bab 3</h2>
+                        <div class="flex-menu">
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1bdBs4D1PR1WGgn0qowtN6DjJbvFlNFcupNAvIYCqHJ0/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>pilihan ganda</p>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1Si0qSAeFu_pcqGriBibYGOxtC56f3cmEWGMnwXG6Wsw/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>uraian</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-dash" id="dash-5">
-                        <img src="../../images/exam.png">
-
-                        <div>
-                            <span>Soal Latihan</span>
-                            <h3>Ulangan Akhir</h3>
+                    <div class="selected hidden" id="menu-4">
+                        <h2>soal latihan bab 4</h2>
+                        <div class="flex-menu">
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1WbUTnyxNyewilp55spYMysy-ETMOIdYsYYq1fgLvrCQ/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>pilihan ganda</p>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1aG4oV1FlvLlMj8ykXHtUmnTRXSaNS3WlYHECyfJ_6js/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>uraian</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected hidden" id="menu-5">
+                        <h2>soal ulangan akhir</h2>
+                        <div class="flex-menu">
+                            <div class="link">
+                                <a
+                                    href="https://docs.google.com/forms/d/1dTgeMgSEgUqPxtOtfTkp2WHDmMFiWCiGO21E_MleeqU/edit?usp=sharing">
+                                    <img src="../../images/exam.png" alt="">
+                                    <p>pilihan ganda</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="content-menu">
-                <div class="before-content">
-                    <h3>Pilih menu terlebih dahulu!</h3>
-                </div>
-
-                <div class="selected hidden" id="menu-1">
-                    <h2>soal latihan bab 1</h2>
-                    <div class="flex-menu">
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/17kE6T4rU2Uro5gOvITyyKNuSmJQUjY1sGZtKEjwzjBw/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>pilihan ganda</p>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/13qFl4sgGD27tSqA_xCMDnJm9x2ERg8cQgpuSeCNjJOo/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>uraian</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="selected hidden" id="menu-2">
-                    <h2>soal latihan bab 2</h2>
-                    <div class="flex-menu">
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1btR2Rgp2Z4AXstqMaZlFHLJe-9H0e2qSJl5zNconoMU/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>pilihan ganda</p>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/15_TZ7lLsK7ZZohpluGENmwa_btcH6h61kUchMP-3AAc/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>uraian</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="selected hidden" id="menu-3">
-                    <h2>soal latihan bab 3</h2>
-                    <div class="flex-menu">
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1bdBs4D1PR1WGgn0qowtN6DjJbvFlNFcupNAvIYCqHJ0/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>pilihan ganda</p>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1Si0qSAeFu_pcqGriBibYGOxtC56f3cmEWGMnwXG6Wsw/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>uraian</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="selected hidden" id="menu-4">
-                    <h2>soal latihan bab 4</h2>
-                    <div class="flex-menu">
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1WbUTnyxNyewilp55spYMysy-ETMOIdYsYYq1fgLvrCQ/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>pilihan ganda</p>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1aG4oV1FlvLlMj8ykXHtUmnTRXSaNS3WlYHECyfJ_6js/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>uraian</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="selected hidden" id="menu-5">
-                    <h2>soal ulangan akhir</h2>
-                    <div class="flex-menu">
-                        <div class="link">
-                            <a
-                                href="https://docs.google.com/forms/d/1dTgeMgSEgUqPxtOtfTkp2WHDmMFiWCiGO21E_MleeqU/edit?usp=sharing">
-                                <img src="../../images/exam.png" alt="">
-                                <p>pilihan ganda</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <script src="../../dist/js/dash.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         // window.addEventListener("contextmenu", function () {
         //     window.open("/menu/dashboard-guru/", "_self");
@@ -212,6 +229,11 @@
 
         const nama = document.getElementById("nama-lengkap");
         nama.innerHTML = localStorage.getItem("nama");
+
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            grabCursor: true,
+        });
     </script>
 </body>
 

@@ -38,3 +38,7 @@ form.addEventListener("submit", function (e) {
 closeButton.addEventListener("click", function () {
     modal.classList.add("hidden")
 })
+
+batal.addEventListener("click", function () {
+    modal.classList.add("hidden");
+})

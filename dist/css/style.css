@@ -60,6 +60,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    transition: all 0.3s ease-in-out;
+}
+
 header {
     width: 100%;
     height: auto;
@@ -120,7 +124,7 @@ main {
 .btn-container {
     width: 100%;
     padding: 15px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
@@ -317,7 +321,6 @@ main {
 .hero-sect>p {
     font-size: 1.3rem;
 }
-
 
 .menu-list {
     width: 100%;
@@ -688,9 +691,9 @@ footer::after {
 }
 
 .animation {
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     background: #191C2F;
@@ -985,14 +988,13 @@ object {
 .select-menu h2,
 .selected h2 {
     font-size: 17px;
-    font-weight: 600;
-    text-transform: capitalize;
+    font-weight: 500;
 }
 
 .banner-2 p {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 1rem;
-    color: #ffffffd8;
+    color: #fff;
 }
 
 .select-menu {
@@ -1003,18 +1005,10 @@ object {
 
 .menu-dashboard {
     width: 100%;
-    height: autu;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    overflow-x: scroll;
-    margin-top: 12px;
-    border-radius: 8px;
-}
-
-.menu-dashboard::-webkit-scrollbar {
-    appearance: none;
-    display: none;
+    height: 90px;
+    margin-top: 8px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .menu-dash {
@@ -1037,12 +1031,17 @@ object {
 
 .menu-dash h3 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     max-width: 250px;
     white-space: nowrap;
     text-transform: capitalize;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.menu-dash span {
+    opacity: 0.7;
+    margin-bottom: 8px;
 }
 
 .content-menu>.before-content {
@@ -1272,7 +1271,8 @@ audio::-webkit-media-controls-enclosure {
 }
 
 .main-heading h1 {
-    font-size: 17;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .main-body ol li,
@@ -1295,7 +1295,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 .main-body h1 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -1337,6 +1337,7 @@ audio::-webkit-media-controls-enclosure {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .load img {
@@ -1367,7 +1368,46 @@ audio::-webkit-media-controls-enclosure {
     }
 }
 
+
 a[aria-disabled="true"] {
     opacity: 0.5;
     cursor: no-drop;
+}
+
+@media (min-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background: #191C2F;
+    }
+
+    .container {
+        width: 375px;
+        height: 97vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: relative !important;
+        margin: auto;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modal-video {
+        max-width: 350px;
+    }
+
+    footer {
+        max-width: 365px;
+        bottom: 20px;
+    }
+
+    .notifikasi {
+        max-width: 350px;
+    }
 }

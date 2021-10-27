@@ -22,50 +22,52 @@
 </head>
 
 <body>
-    <main>
-        <div class="form-container">
-            <h1>
-                Masuk
-            </h1>
-
-            <form autocomplete="off" aria-required="true" method="POST">
-                <div class="input">
-                    <label for="nama-user">Nama Lengkap:</label>
-                    <input type="text" name="nama" id="nama-user" required>
-
-                </div>
-                <div class="input">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" required>
-
-                    <span class="err err-pass">Password salah</span>
-                </div>
-                <div class="input">
-                    <label for="kode-unik">Kode Unik:</label>
-                    <input type="number" name="kode" id="kode-unik" required>
-
-                    <span class="err err-code">Kode unik salah</span>
-                </div>
-
-                <div class="input-button">
-                    <button type="submit">Masuk</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="container-modal">
-            <div class="notifikasi">
+    <div class="container">
+        <main>
+            <div class="form-container">
                 <h1>
-                    Apakah anda seorang guru?
+                    Masuk
                 </h1>
 
-                <div class="modal-button">
-                    <button id="tidak">Tidak</button>
-                    <button id="ya">Ya</button>
+                <form autocomplete="off" aria-required="true" method="POST">
+                    <div class="input">
+                        <label for="nama-user">Nama Lengkap:</label>
+                        <input type="text" name="nama" id="nama-user" required>
+
+                    </div>
+                    <div class="input">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+
+                        <span class="err err-pass">Password salah</span>
+                    </div>
+                    <div class="input">
+                        <label for="kode-unik">Kode Unik:</label>
+                        <input type="number" name="kode" id="kode-unik" required>
+
+                        <span class="err err-code">Kode unik salah</span>
+                    </div>
+
+                    <div class="input-button">
+                        <button type="submit">Masuk</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container-modal">
+                <div class="notifikasi">
+                    <h1>
+                        Apakah anda seorang guru?
+                    </h1>
+
+                    <div class="modal-button">
+                        <button id="tidak">Tidak</button>
+                        <button id="ya">Ya</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <script src="../../dist/js/auth-login.js"></script>
 </body>
